@@ -1,0 +1,16 @@
+[project]
+name = "nudge"
+version = "0.9.0"
+description = "Nudge: personal finance app backend"
+requires-python = ">=3.10"
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["nudge*"]
+
+[tool.setuptools.package-data]
+nudge = ["migrations/*.sql"]
